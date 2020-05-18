@@ -1,0 +1,419 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  background-color: black;
+  /* padding: 1px; */
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.navContainer {
+  margin-top: 60px;
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+.navItems > img {
+  width: 25px;
+  height: auto;
+  padding: 20px 10px;
+  margin-bottom: 0;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.left {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-end; */
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-end; */
+}
+
+/* Dropdown */
+
+.navItems {
+  float: left;
+  overflow: hidden;
+}
+
+.navItems .dropbtn {
+  font-size: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 10px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.navItems:hover .dropbtn {
+  background: url(./img/line-clay-bg.svg) no-repeat;
+  background-position: 50% 70%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 300px;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+/* 
+.dropdown-content {
+  background: rgb(255, 248, 233);
+  text-align: center;
+  padding: 16px;
+  color: white;
+} */
+
+.navItems:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+.column {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.column a {
+  padding: 10px;
+  display: block;
+}
+.column img {
+  width: 200px;
+  height: auto;
+}
+
+.column a:hover {
+  text-decoration: underline;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+#summer {
+  width: 100%;
+}
+
+h4 {
+  text-align: center;
+}
+
+.ImgContainer {
+  display: grid;
+  grid-gap: 10px;
+  /* width: 100%; */
+  /* grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%; */
+  grid-template-rows: repeat(20, auto);
+  grid-template-columns: repeat(20, auto);
+  /* grid-template-columns: 20% 20% 20% 20% 20%; */
+  /* grid-template-columns: 25% 25% 25% 25%; */
+}
+
+.first {
+  grid-column: 1 / 15;
+  grid-row: 1 / 8;
+  position: relative;
+}
+
+#sea {
+  /*  position: relative;
+*/
+  width: 100%;
+  height: 100%;
+}
+.islandCard {
+  /* display: none; */
+  padding: 20px;
+  position: absolute;
+  top: 8em;
+  left: 4em;
+  text-align: center;
+  background-color: white;
+  opacity: 0;
+}
+
+#island {
+  width: 500px;
+  height: auto;
+}
+.islandCard:hover {
+  /* display: block; */
+  opacity: 0.5;
+}
+
+.second {
+  grid-column: 15 / 21;
+  grid-row: 1 / 10;
+  position: relative;
+}
+
+#cars {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.dodgeCard {
+  /* display: none; */
+  padding: 20px;
+  position: absolute;
+  top: 26%;
+  left: 30%;
+  text-align: center;
+  background-color: white;
+  opacity: 0;
+}
+
+#dodge {
+  width: 200px;
+  height: auto;
+}
+.dodgeCard:hover {
+  /* display: block; */
+  opacity: 0.5;
+}
+
+.third {
+  grid-column: 1 / 9;
+  grid-row: 8 / 13;
+  position: relative;
+}
+
+#guns {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.rifleCard {
+  /* display: none; */
+  padding: 20px;
+  position: absolute;
+  top: 15%;
+  left: 16%;
+  text-align: center;
+  background-color: white;
+  opacity: 0;
+}
+
+#rifle {
+  width: 350px;
+  height: 180px;
+}
+.rifleCard:hover {
+  /* display: block; */
+  opacity: 0.5;
+}
+
+.fourth {
+  grid-column: 9 / 15;
+  grid-row: 8 / 16;
+  position: relative;
+}
+
+#jocker {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.deathpoolCard {
+  /* display: none; */
+  padding: 10px;
+  position: absolute;
+  top: 8%;
+  left: 5%;
+  width: 78%;
+  text-align: center;
+  background-color: white;
+  opacity: 0;
+}
+
+#deathpool {
+  width: 80%;
+  height: 553px;
+}
+.deathpoolCard:hover {
+  /* display: block; */
+  opacity: 0.5;
+}
+
+.fifth {
+  grid-column: 1 / 9;
+  grid-row: 13 / 21;
+  position: relative;
+}
+
+#tiffany {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.tiffany_111Card {
+  /* display: none; */
+  padding: 10px;
+  position: absolute;
+  top: 8%;
+  left: 9%;
+  width: 78%;
+  text-align: center;
+  background-color: white;
+  opacity: 0;
+}
+
+#tiffany_111 {
+  width: 100%;
+  height: 100%;
+}
+.tiffany_111Card:hover {
+  /* display: block; */
+  opacity: 0.5;
+}
+
+.sixth {
+  grid-column: 15 / 21;
+  grid-row: 10 / 16;
+  position: relative;
+}
+
+#games {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.ggCard {
+  /* display: none; */
+  padding: 20px;
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  opacity: 0;
+}
+
+#gg {
+  width: 100%;
+  height: 353px;
+}
+.ggCard:hover {
+  /* display: block; */
+  opacity: 0.5;
+}
+
+.seventh {
+  grid-column: 9 / 21;
+  grid-row: 16 / 21;
+
+  position: relative;
+}
+
+#steak {
+  position: relative;
+  width: 138%;
+  height: 100%;
+}
+.fireCard {
+  /* display: none; */
+  padding: 20px;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  opacity: 0;
+}
+
+#fire {
+  width: 100%;
+  height: 200px;
+}
+.fireCard:hover {
+  /* display: block; */
+  opacity: 0.5;
+}
+
+.top {
+  border: solid 3px white;
+  display: inline-block;
+  color: white;
+  background-color: black;
+  opacity: 0.7;
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  padding: 30px 25px;
+
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  padding: 10px;
+}
+
+footer > a {
+  color: white;
+}
+
+footer > a:active {
+  text-decoration: underline;
+}
+/* .ImgContainer {
+  margin: 0 50px;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(4, auto);
+} */
